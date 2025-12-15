@@ -151,8 +151,13 @@ Click on each profile to visit their academic or research pages.</p>
 <hr>
 <section id="phd-students" class="level2">
 <h2 class="anchored" data-anchor-id="phd-students">🧑‍🎓 PhD Students</h2>
-<p>Tesfaye Sebastiano Salarin is a PhD Candidate in Economics and Finance at the University of Trento and currently a visiting researcher with the EconophysiX Group. His research examines the interplay between intraday price dynamics and both exogenous and endogenous shocks to financial markets. His broader interests include Market Microstructure, High-Frequency and Algorithmic Trading, and Computational Finance. He holds an MSc in Quantitative Finance from Cà Foscari University of Venice.</p>
-<p><img src="images/tesfaye.jpg" alt="Tesfaye Salarin" width="200"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="people/tesfaye.html"><img src="images/tesfaye.jpg" class="img-fluid figure-img" width="200" alt="Tesfaye Sebastiano Salarin"></a></p>
+<figcaption>Tesfaye Sebastiano Salarin</figcaption>
+</figure>
+</div>
+<p><em>PhD Candidate, University of Trento</em></p>
 
 
 </section>
@@ -248,7 +253,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/tesfayesalarin\.github\.io\/YES-Seminars\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

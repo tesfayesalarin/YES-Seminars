@@ -148,7 +148,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="whats-next" class="level1">
 <h1>📅 What’s next!</h1>
 <p>Welcome to our seminar calendar!<br>
-Here you’ll find the next sessions of our <strong>Seminar Group</strong> — click on “Details” to learn more about each talk.</p>
+Here you’ll find the next sessions of our <strong>Seminar Group</strong>!</p>
 <hr>
 <section id="seminar-logistics" class="level2">
 <h2 class="anchored" data-anchor-id="seminar-logistics">🕓 Seminar Logistics</h2>
@@ -165,12 +165,11 @@ Here you’ll find the next sessions of our <strong>Seminar Group</strong> — c
 <caption>Upcoming Seminars</caption>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Event Date</th>
 <th style="text-align: left;">Title</th>
 <th style="text-align: left;">Speaker</th>
 <th style="text-align: left;">Affiliation</th>
-<th style="text-align: left;">Paper</th>
-<th style="text-align: left;">Additional Materials</th>
+<th style="text-align: left;">Details</th>
 </tr>
 </thead>
 <tbody>
@@ -179,8 +178,7 @@ Here you’ll find the next sessions of our <strong>Seminar Group</strong> — c
 <td style="text-align: left;">TBD</td>
 <td style="text-align: left;">TBD</td>
 <td style="text-align: left;">TBD</td>
-<td style="text-align: left;">TBD</td>
-<td style="text-align: left;">TBD</td>
+<td style="text-align: left;"><a href="TBD">Details</a></td>
 </tr>
 </tbody>
 </table>
@@ -188,40 +186,29 @@ Here you’ll find the next sessions of our <strong>Seminar Group</strong> — c
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <caption>Past Seminars</caption>
-<colgroup>
-<col style="width: 13%">
-<col style="width: 7%">
-<col style="width: 21%">
-<col style="width: 25%">
-<col style="width: 7%">
-<col style="width: 25%">
-</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Event Date</th>
 <th style="text-align: left;">Title</th>
 <th style="text-align: left;">Speaker</th>
 <th style="text-align: left;">Affiliation</th>
-<th style="text-align: left;">Paper</th>
-<th style="text-align: left;">Additional Materials</th>
+<th style="text-align: left;">Details</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">2025-04-02</td>
-<td style="text-align: left;">yyy</td>
+<td style="text-align: left;">The Bank-Sovereign Nexus in a Banking Union: Evidence from Significant and Less Significant Institutions</td>
 <td style="text-align: left;">Alessandro Sulas</td>
 <td style="text-align: left;">University of Trento</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"><a href="Details">Details</a></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">2025-03-12</td>
-<td style="text-align: left;">xxx</td>
+<td style="text-align: left;">Non-gendered shocks, gendered consequences: Evidence from a German reform</td>
 <td style="text-align: left;">Clementina Crocé</td>
 <td style="text-align: left;">University of Padua</td>
-<td style="text-align: left;">NA</td>
-<td style="text-align: left;">NA</td>
+<td style="text-align: left;"><a href="talks/2025-03-12/">Details</a></td>
 </tr>
 </tbody>
 </table>
@@ -323,7 +310,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/tesfayesalarin\.github\.io\/YES-Seminars\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
